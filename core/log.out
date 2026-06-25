@@ -1,0 +1,1311 @@
+* Running on local URL:  http://0.0.0.0:5003
+* Running on public URL: https://f103cab6b3d8d32faf.gradio.live
+
+This share link is temporary and will last for up to 1 week (best effort). For free permanent hosting and GPU upgrades, run `gradio deploy` from the terminal in the working directory to deploy to Hugging Face Spaces (https://huggingface.co/spaces)
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]Fetching 16 files:   6%|6         | 1/16 [00:00<00:03,  3.76it/s]Fetching 16 files: 100%|##########| 16/16 [00:00<00:00, 57.56it/s]
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:384: UserWarning: Found GPU0 NVIDIA GeForce GTX 1070 which is of compute capability (CC) 6.1.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+- 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+- 9.0 which supports hardware CC >=9.0,<10.0
+- 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+- 12.0 which supports hardware CC >=12.0,<13.0
+Please follow the instructions at https://pytorch.org/get-started/locally/ to install a PyTorch release that supports one of these CUDA versions: 12.6
+  _warn_unsupported_code(d, device_cc, code_ccs)
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py:502: UserWarning: 
+NVIDIA GeForce GTX 1070 with CUDA capability sm_61 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_75 sm_80 sm_86 sm_90 sm_100 sm_120.
+If you want to use the NVIDIA GeForce GTX 1070 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  queued_call()
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/routes.py:1379: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+  return await queue_join_helper(body, request, username)
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 867, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2274, in process_api
+    inputs = await self.preprocess_data(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1852, in preprocess_data
+    inputs_cached = await processing_utils.async_move_files_to_cache(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 621, in async_move_files_to_cache
+    return await client_utils.async_traverse(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio_client/utils.py", line 1157, in async_traverse
+    return await func(json_obj)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 592, in _move_to_cache
+    _check_allowed(payload.path, check_in_upload_folder)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/processing_utils.py", line 537, in _check_allowed
+    raise InvalidPathError(msg)
+gradio.exceptions.InvalidPathError: Cannot move /run/media/noname/DATA/project/Nola_v2/core/assets/vixtts_sample_female.wav to the gradio cache dir because it was not uploaded by a user.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 897, in process_events
+    await run_sync(self.compute_analytics_summary, self.event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 185, in compute_analytics_summary
+    df = self._get_df(event_analytics)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 174, in _get_df
+    pd.DataFrame(list(event_analytics.values()))
+TypeError: NDFrame.infer_objects() got an unexpected keyword argument 'copy'
+[2026-06-24 10:52:46,196] [WARNING] [config_utils.py:70:_process_deprecated_field] Config parameter replace_method is deprecated. This parameter is no longer needed, please remove from your call to DeepSpeed-inference
+[2026-06-24 10:52:46,196] [WARNING] [config_utils.py:70:_process_deprecated_field] Config parameter mp_size is deprecated use tensor_parallel.tp_size instead
+Keyboard interruption in main thread... closing server.
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2782, in _run_ninja_build
+    subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 130.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/queueing.py", line 957, in process_events
+    response = await route_utils.call_process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/route_utils.py", line 386, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 2280, in process_api
+    result = await self.call_function(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/blocks.py", line 1669, in call_function
+    prediction = await utils.async_iteration(iterator)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/utils.py", line 886, in async_iteration
+    return await anext(iterator)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/utils.py", line 868, in __anext__
+    return await anyio.to_thread.run_sync(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2592, in run_sync_in_worker_thread
+    return await future
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 1029, in run
+    result = context.run(func, *args)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/utils.py", line 851, in run_sync_iterator_async
+    return next(iterator)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/gradio/utils.py", line 1044, in gen_wrapper
+    response = next(iterator)
+  File "/run/media/noname/DATA/project/Nola_v2/core/tts.py", line 63, in load_model
+    XTTS_MODEL.load_checkpoint(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/TTS/tts/models/xtts.py", line 783, in load_checkpoint
+    self.gpt.init_gpt_for_inference(kv_cache=self.args.kv_cache, use_deepspeed=use_deepspeed)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/TTS/tts/layers/xtts/gpt.py", line 224, in init_gpt_for_inference
+    self.ds_engine = deepspeed.init_inference(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/__init__.py", line 386, in init_inference
+    engine = InferenceEngine(model, config=ds_inference_config)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/inference/engine.py", line 154, in __init__
+    self._apply_injection_policy(config)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/inference/engine.py", line 390, in _apply_injection_policy
+    replace_transformer_layer(client_module, self.module, checkpoint, config, self.config)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/module_inject/replace_module.py", line 411, in replace_transformer_layer
+    replaced_module = replace_module(model=model,
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/module_inject/replace_module.py", line 664, in replace_module
+    replaced_module, _ = _replace_module(model, policy, state_dict=sd)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/module_inject/replace_module.py", line 724, in _replace_module
+    _, layer_id = _replace_module(child,
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/module_inject/replace_module.py", line 724, in _replace_module
+    _, layer_id = _replace_module(child,
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/module_inject/replace_module.py", line 700, in _replace_module
+    replaced_module = policies[child.__class__][0](child,
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/module_inject/replace_module.py", line 338, in replace_fn
+    new_module = replace_with_policy(child,
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/module_inject/replace_module.py", line 254, in replace_with_policy
+    _container.create_module()
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/module_inject/containers/gpt2.py", line 20, in create_module
+    self.module = DeepSpeedGPTInference(_config, mp_group=self.mp_group)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/model_implementations/transformers/ds_gpt.py", line 20, in __init__
+    super().__init__(config, mp_group, quantize_scales, quantize_groups, merge_count, mlp_extra_grouping)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/model_implementations/transformers/ds_transformer.py", line 68, in __init__
+    self.attention = DeepSpeedSelfAttention(self.config, mp_group, quantize_scales, quantize_groups,
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/ds_attention.py", line 79, in __init__
+    self.qkv_func = QKVGemmOp(config)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/op_binding/qkv_gemm.py", line 18, in __init__
+    super(QKVGemmOp, self).__init__(config)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/transformer/inference/op_binding/base.py", line 20, in __init__
+    BaseOp.inference_module = builder.load()
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/op_builder/builder.py", line 543, in load
+    return self.jit_load(verbose)
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/op_builder/builder.py", line 590, in jit_load
+    op_module = load(name=self.name,
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 1818, in load
+    return _jit_compile(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2271, in _jit_compile
+    _write_ninja_file_and_build_library(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2432, in _write_ninja_file_and_build_library
+    _run_ninja_build(
+  File "/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2799, in _run_ninja_build
+    raise RuntimeError(message) from e
+RuntimeError: Error building extension 'transformer_inference': [1/11] /opt/cuda/bin/nvcc -MD -MF relu.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/relu.cu -o relu.cuda.o 
+FAILED: [code=1] relu.cuda.o 
+/opt/cuda/bin/nvcc -MD -MF relu.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/relu.cu -o relu.cuda.o 
+nvcc fatal   : Unsupported gpu architecture 'compute_61'
+[2/11] /opt/cuda/bin/nvcc -MD -MF rms_norm.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/rms_norm.cu -o rms_norm.cuda.o 
+FAILED: [code=1] rms_norm.cuda.o 
+/opt/cuda/bin/nvcc -MD -MF rms_norm.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/rms_norm.cu -o rms_norm.cuda.o 
+nvcc fatal   : Unsupported gpu architecture 'compute_61'
+[3/11] /opt/cuda/bin/nvcc -MD -MF dequantize.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/dequantize.cu -o dequantize.cuda.o 
+FAILED: [code=1] dequantize.cuda.o 
+/opt/cuda/bin/nvcc -MD -MF dequantize.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/dequantize.cu -o dequantize.cuda.o 
+nvcc fatal   : Unsupported gpu architecture 'compute_61'
+[4/11] /opt/cuda/bin/nvcc -MD -MF transform.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/transform.cu -o transform.cuda.o 
+FAILED: [code=1] transform.cuda.o 
+/opt/cuda/bin/nvcc -MD -MF transform.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/transform.cu -o transform.cuda.o 
+nvcc fatal   : Unsupported gpu architecture 'compute_61'
+[5/11] /opt/cuda/bin/nvcc -MD -MF softmax.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/softmax.cu -o softmax.cuda.o 
+FAILED: [code=1] softmax.cuda.o 
+/opt/cuda/bin/nvcc -MD -MF softmax.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/softmax.cu -o softmax.cuda.o 
+nvcc fatal   : Unsupported gpu architecture 'compute_61'
+[6/11] /opt/cuda/bin/nvcc -MD -MF layer_norm.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/layer_norm.cu -o layer_norm.cuda.o 
+FAILED: [code=1] layer_norm.cuda.o 
+/opt/cuda/bin/nvcc -MD -MF layer_norm.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/layer_norm.cu -o layer_norm.cuda.o 
+nvcc fatal   : Unsupported gpu architecture 'compute_61'
+[7/11] /opt/cuda/bin/nvcc -MD -MF apply_rotary_pos_emb.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/apply_rotary_pos_emb.cu -o apply_rotary_pos_emb.cuda.o 
+FAILED: [code=1] apply_rotary_pos_emb.cuda.o 
+/opt/cuda/bin/nvcc -MD -MF apply_rotary_pos_emb.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/apply_rotary_pos_emb.cu -o apply_rotary_pos_emb.cuda.o 
+nvcc fatal   : Unsupported gpu architecture 'compute_61'
+[8/11] /opt/cuda/bin/nvcc -MD -MF gelu.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/gelu.cu -o gelu.cuda.o 
+FAILED: [code=1] gelu.cuda.o 
+/opt/cuda/bin/nvcc -MD -MF gelu.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/gelu.cu -o gelu.cuda.o 
+nvcc fatal   : Unsupported gpu architecture 'compute_61'
+[9/11] /opt/cuda/bin/nvcc -MD -MF pointwise_ops.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/pointwise_ops.cu -o pointwise_ops.cuda.o 
+FAILED: [code=1] pointwise_ops.cuda.o 
+/opt/cuda/bin/nvcc -MD -MF pointwise_ops.cuda.o.d -DTORCH_EXTENSION_NAME=transformer_inference -DTORCH_API_INCLUDE_EXTENSION_H -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/includes -I/run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/includes -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include -isystem /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/torch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/python3.10 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_61,code=compute_61 -gencode=arch=compute_61,code=sm_61 --compiler-options '-fPIC' -O3 --use_fast_math -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_HALF2_OPERATORS__ --threads=8 -UC10_USE_GLOG -c /run/media/noname/DATA/project/Nola_v2/.venv/lib/python3.10/site-packages/deepspeed/ops/csrc/transformer/inference/csrc/pointwise_ops.cu -o pointwise_ops.cuda.o 
+nvcc fatal   : Unsupported gpu architecture 'compute_61'
+ninja: build stopped: interrupted by user.
+
+Killing tunnel 0.0.0.0:5003 <> https://f103cab6b3d8d32faf.gradio.live

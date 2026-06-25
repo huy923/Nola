@@ -1,0 +1,48 @@
+{
+  "voice": {
+    "realtime": true,
+    "streaming": true,
+    "interrupt": true,
+    "latency_target_ms": 500,
+    "wake_word": "nola",
+    "language": "vi",
+    "stt_model": "faster-whisper-base",
+    "vad_threshold": 0.012,
+    "silence_duration_ms": 300
+  },
+  "autonomy": {
+    "auto_execute": true,
+    "confirm_before_run": false,
+    "max_retries": 3,
+    "ai_tools": ["claude", "chatgpt"],
+    "default_ai": "claude"
+  },
+  "virtual_input": {
+    "mode": "window_separate",
+    "respect_user_activity": true,
+    "idle_threshold_ms": 2000,
+    "use_pyautogui": true,
+    "use_xdotool": true
+  },
+  "ui": {
+    "engine": "tkinter",
+    "transparent": true,
+    "always_on_top": true,
+    "avatar_size": 200,
+    "speech_bubble_duration": 8000,
+    "chat_panel_on_double_click": true,
+    "theme": "fairy_blue"
+  },
+  "personality": {
+    "name": "Nola",
+    "attitude": 0.7,
+    "proactive": true,
+    "voice_pitch": 1.2,
+    "voice_speed": 1.0,
+    "language": "vi"
+  },
+  "paths": {
+    "project_dir": "~/NolaProjects",
+    "chrome_profile": "/tmp/nola-chrome-profile"
+  }
+}
